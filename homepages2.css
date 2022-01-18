@@ -119,7 +119,7 @@
 
   .s2_right_particular{
       display: flex;
-      margin-top: 12%;
+      margin-top: 10%;
   }
 
   .s2_right_content img{
@@ -148,6 +148,93 @@
        margin-top: 5%;
    }
   
+
+   .s2_sale_container{
+        background-image:  linear-gradient(rgba(0, 0,0, 0.5),rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1516616370751-86d6bd8b0651?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+      
+        height: 80vh;
+      
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+   }
+
+   .s2_45poff{
+       display: flex;
+       flex-direction: row;
+   }
+
+   .s2_percent_block{
+    font-family: 'Quicksand', sans-serif;
+    line-height: 32px;
+    position: relative;
+    left: 5%;
+    top: 30%;
+   }
+
+   .s2_percent_block h1{
+       padding-top: 25px;
+       font-size: 90px;
+       font-weight: bold;
+       letter-spacing: -2px;
+   }
+
+   .s2_poff{
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 50px;
+   }
+
+   .s2_45 ,.s2_per{
+      color: rgb(255,221,0);
+   }
+
+   .s2_sale, .s2_off{
+       color: white;
+   }
+
+   .s2_offer_block{
+       position: relative;
+       left: 7%;
+       top: 30%;
+       padding-right: 56%;
+       font-family: 'Quicksand', sans-serif;
+       color: white;
+   }
+
+   .s2_offertitle{
+       font-size: 25px;
+       /* font-weight: 600; */
+       padding-bottom: 15px;
+   }
+
+   .s2_offerbook_btn{
+       height: 38px;
+       width: 32%;
+       font-size: 15px;
+       border-radius: 25px;
+       border-style: none;
+       background-color: rgb(255,221,0);
+       cursor: pointer;
+   }
+
+   .s2_offerread_btn{
+    height: 38px;
+    width: 32%;
+    font-size: 15px;
+    border-radius: 25px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+   }
+
+   .s2_offer_btns{
+       padding-top: 12%;
+   }
 
   /* --------------------------------------------- */
 
@@ -216,4 +303,6 @@
     padding-left: 3%;
     padding-right: 5%;
     }
+
+
 }
