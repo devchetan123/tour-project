@@ -15,6 +15,7 @@
 .s2_popular_des_title{
     font-size: 32px;
     padding-bottom:25px ;
+    font-weight: 400;
 }
 
 .s2_popular_des_para{
@@ -133,13 +134,14 @@
 
   .s2_img_right_content{
       padding-left: 3%;
-      padding-right: 25%;
+      padding-right: 18%;
   }
 
   .s2_blog_content h2{
-      font-weight:600;
+      /* font-weight: 300; */
       color: rgb(56, 53, 53);
   }
+  
 
   .s2_blog_content p{
     font-size: 14px;
@@ -161,6 +163,7 @@
         background-size: cover;
         display: flex;
    }
+
 
    .s2_45poff{
        display: flex;
@@ -244,6 +247,7 @@
    .s2_video_img {
        height: 76%;
        width: 100%;
+       box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2)
    }
 
    .s2_video_block{
@@ -274,6 +278,7 @@
 .s2_recd_hotal_title{
     font-size: 32px;
     padding-bottom:25px ;
+    font-weight: 400;
 }
 
 .s2_recd_hotal_para{
@@ -341,7 +346,7 @@
 }
 
 .s2_hotelhead{
-    font-weight: 600;
+    font-weight: 500;
     color: rgb(61, 57, 57);
 }
 
@@ -362,6 +367,7 @@
 .s2_guest_block{
     background: rgb(250,250,250);
     padding-bottom: 2%;
+    
 }
 
 .s2_guest_head{
@@ -394,6 +400,10 @@
     /* margin-left: 10px;
     margin-right: 10px; */
     display: none;
+}
+
+.s2_guest_title{
+    font-weight: 400;
 }
 
 
@@ -455,6 +465,11 @@
     padding-right: 25%;
 }
 
+
+.s2_pop_countyh{
+    font-weight: 400;
+}
+
 .s2_country1_block{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -499,7 +514,7 @@
 
 .s2_right_country1  h2, h3{
     /* background: rgb(255,221,0); */
-    font-weight: 300;
+    font-weight: 500;
     padding-bottom: 3%;
 }
 
@@ -513,7 +528,7 @@
 }
 
 .s2_right_country2 h2{
-    font-weight: 300;
+    font-weight: 500;
     padding-bottom: 3%;
 }
 
@@ -571,11 +586,33 @@
     background-size: cover;
 }
 
+.s2_hotlpara{
+    font-size: 13px;
+    padding-right: 6%;
+    line-height: 3.7vh;
+}
+
+.s2_hotlpara2{
+    font-size: 13px;
+    padding-left: 6%;
+    line-height: 3.7vh;
+}
+
+
 
 .s2_rightTable td{
     font-size: 15px;
     width: 1%;
-    text-align: center;
+    text-align: left;
+    padding-top:1% ;
+    padding-bottom: 1%;
+    cursor: pointer;
+}
+
+.s2_rightTable2 td{
+    font-size: 15px;
+    width: 1%;
+    text-align: right;
     padding-top:1% ;
     padding-bottom: 1%;
     cursor: pointer;
@@ -674,6 +711,10 @@ color: white;
 font-size: 15px;
 }
 
+.s2_signuphead{
+    font-weight: 400;
+}
+
 .s2_signinbtn{
    margin-bottom: 4%;
    display: flex;
@@ -717,14 +758,16 @@ font-size: 15px;
         display: grid;
         grid-template-columns: 1fr;
         font-family: 'Quicksand', sans-serif;
+        
     }
+
 
     .s2_right_content{
         padding-left: 20%;
     }
 
     .s2_sale_container{
-        height: 200vh;
+        height: 160vh;
         display: flex;
         flex-direction: column;
    }
@@ -938,6 +981,10 @@ font-size: 15px;
 
 @media screen and (max-width: 420px){
 
+    .s2_sale_container{
+        padding-bottom: 170vh;
+    }
+
     .s2_picture_container{
         display: grid;
         grid-template-columns: 1fr;
@@ -982,8 +1029,22 @@ font-size: 15px;
     height: 20%;
     width: 14%;
 }
-.s2_sale_container{
-    height: 190vh;
+
+.s2_offer_btns{
+    padding-top: 4vh;
+    padding-bottom: 5vh;
+}
+
+.s2_offertitle{
+    padding-top: 10vh;
+}
+
+.s2_45{
+    padding-top: 6vh;
+}
+
+.s2_poff{
+    padding-top: 8vh;
 }
 
 .s2_hsblock_child{
@@ -1032,6 +1093,7 @@ font-size: 15px;
     padding-right: 12%;
     padding-left: 12%;
     font-size: 15px;
+    padding-top: 5vh;
  }
  /* .s2_guest_head{
     
@@ -1066,6 +1128,10 @@ font-size: 15px;
     padding-left: 2%;
 }
 
+.s2_sale_container{
+    height: 100vh;
+}
+
 /* signup css */
 
 .s2_signupbtn{
@@ -1086,11 +1152,17 @@ font-size: 15px;
        margin-bottom: 4%;
        padding-left: 3%;
        padding-right: 3%;
+       font-size: 18px;
        
    }
 
    .s2_signup_container{      
         height: 80vh;
+   }
+
+   .s2_signuphead{
+       font-size: 28px;
+       font-weight: 500;
    }
 
 /* singup css */

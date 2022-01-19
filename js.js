@@ -37,6 +37,9 @@ if(window.innerWidth <= 420 ){
 
 window.addEventListener("load", s2_show)
 
+var s2_a = 0
+
+setInterval(s2_moveleft,6000)
 
 function s2_show(){
 
@@ -56,6 +59,10 @@ function s2_moveleft(){
     }
     else{
         return
+    }
+    s2_a++
+    if(s2_a >= 2){
+        setTimeout(s2_moveright,6000)
     }
 }
 
@@ -83,12 +90,17 @@ var s2_guestleft = 1;
 var s2_guestright = 1;
  
 window.addEventListener("load", s2_guestshow)
+
+var s2_b = 0
+
+setInterval(s2_guestmoveleft,6000)
  
 function s2_guestshow(){
     for(var i = s2_guestleft; i<=s2_guestright ; i++){
         document.getElementById("s2guest" + i).style.display = "inline-block"
     }
 }
+
  
 function s2_guestmoveleft(){
     if(s2_guestleft <= 2 && s2_guestright <=2){
@@ -101,6 +113,10 @@ function s2_guestmoveleft(){
     }
     else{
         return
+    }
+    s2_b++
+    if(s2_b >= 2){
+        setTimeout(s2_guestmoveright,6000)
     }
 }
  
