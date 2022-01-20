@@ -5,13 +5,230 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>TOUR</title>
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="homepages2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script type="text/javascript">
+        function togglemenu() {
+            document.querySelector('.S1_nav_right').classList.toggle('active')
+        }
+    </script>
+
 </head>
 
 <body>
+    <section id="S1">
+        <!-- NAVIGATION BAR START -->
+        <nav id="S1_nav">
+
+            <div class="S1_nav_left">TOUR</div>
+            <div class="S1_nav_right" onclick="togglemenu()">
+                <img src="menubar.png" alt="" class="S1_nav_menubar">
+                <ul class="S1_nav_right_ul">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Tours</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Hotels</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="index.html">About</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+        <!-- NAVIGATION BAR END -->
+
+        <!-- SLIDING IMAGE START -->
+        <div class="S1_div_image">
+            <div id="S1_div_centertext">
+                <p id="S1_div_centertext1">10 DAYS CRUISE</p>
+                <p id="S1_div_centertext2">From Greece to Spain</p>
+            </div>
+            <img src="image13.webp" id="image" class="S1_home_image">
+        </div>
+        <!-- SLIDING IMAGE END -->
+
+
+        <!-- TAB START -->
+        <div class="S1_tab">
+
+            <div class="S1_button_container">
+                <button onclick="showPanel(0,'#2c2e3e')">Flight</button>
+                <button onclick="showPanel(1,'#2c2e3e')">Hotel</button>
+                <button onclick="showPanel(2,'#2c2e3e')">Car Rent</button>
+                <button onclick="showPanel(3,'#2c2e3e')">Cruises</button>
+            </div>
+            <div class="S1_tab_pannel">
+                <form class="S1_tab_pannel_form1">
+                    <div>
+                        <label for="">Where:</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="Check-in">Check-in:</label>
+                        <input placeholder="Check-in-date" type="text" onfocus="(this.type='date')">
+                    </div>
+                    <div>
+                        <label for="Check-out">Check-out:</label>
+                        <input placeholder="Check-out-date" type="text" onfocus="(this.type='date')">
+                    </div>
+                    <div>
+                        <label for="number">Guest:</label>
+                        <input type="number">
+                    </div>
+                    <div>
+                        <label for="" style="color:#2c2e3e ;">find flight</label>
+                        <input type="submit" value="Find Flight" id="findflight">
+                    </div>
+
+                </form>
+
+            </div>
+            <div class="S1_tab_pannel">
+                <form class="S1_tab_pannel_form2">
+                    <div>
+                        <p id="S1_tab_pannel_form2_p1">BOOK NOW</p>
+                        <p id="S1_tab_pannel_form2_p2">BEST PRICE ONLINE</p>
+                    </div>
+                    <div>
+                        <label for="Check-in">Check-in:</label>
+                        <input placeholder="Check-in-date" type="text" onfocus="(this.type='date')">
+                    </div>
+                    <div>
+                        <label for="Check-out">Check-out:</label>
+                        <input placeholder="Check-out-date" type="text" onfocus="(this.type='date')">
+                    </div>
+                    <div>
+                        <label for="">Guest:</label>
+                        <input type="number">
+                    </div>
+                    <div>
+                        <label for="" style="color:#2c2e3e ;">find flight</label>
+                        <input type="submit" value="Find Flight" id="findflight">
+                    </div>
+                </form>
+            </div>
+            <div class="S1_tab_pannel">
+                <form class="S1_tab_pannel_form3">
+                    <div>
+                        <label for="">Where:</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="Check-in">Start Date:</label>
+                        <input placeholder="Check-in-date" type="text" onfocus="(this.type='date')">
+                    </div>
+                    <div>
+                        <label for="Check-out">Return Date:</label>
+                        <input placeholder="Check-out-date" type="text" onfocus="(this.type='date')">
+                    </div>
+
+                    <div>
+                        <label for="" style="color:#2c2e3e ;">find flight</label>
+                        <input type="submit" value="Find Flight" id="findflight3">
+                    </div>
+                </form>
+            </div>
+            <div class="S1_tab_pannel">
+                <form class="S1_tab_pannel_form3">
+                    <div>
+                        <label for="">Where:</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="Check-in">Check-in:</label>
+                        <input placeholder="Check-in-date" type="text" onfocus="(this.type='date')">
+                    </div>
+                    <div>
+                        <label for="Check-out">Check-out:</label>
+                        <input placeholder="Check-out-date" type="text" onfocus="(this.type='date')">
+                    </div>
+
+                    <div>
+                        <label for="" style="color:#2c2e3e ;">find flight</label>
+                        <input type="submit" value="Find Flight" id="findflight3">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- TAB END -->
+
+        <!-- BOX START -->
+        <div class="S1_box_below_tab">
+            <div id="S1_box_below_tab1" class="S1_box_blue">
+
+            </div>
+            <div class="S1_box_below_tab_common  S1_box_blue">
+                <div>
+                    <img src="./around.svg" alt="" class="S1_box_image">
+                </div>
+                <div class="S1_box_text1">
+                    <p>Amazing Travel</p>
+                </div>
+                <div class="S1_box_text2">
+                    <p>Separated they live in Book marks grove right at the coast of the Sematics,a large language ocean. A small river named Duden flows by their place and supplies
+                    </p>
+                </div>
+            </div>
+            <div class="S1_box_below_tab_common">
+                <div>
+                    <img src="./cruises.png" alt="" class="S1_box_image">
+                </div>
+                <div class="S1_box_text1">
+                    <p>Our Cruises</p>
+                </div>
+                <div class="S1_box_text2">
+                    <p>Separated they live in Book marks grove right at the coast of the Sematics,a large language ocean. A small river named Duden flows by their place and supplies
+                    </p>
+                </div>
+            </div>
+            <div class="S1_box_below_tab_common">
+                <div>
+                    <img src="./bookurtrip.png" alt="" class="S1_box_image">
+                </div>
+                <div class="S1_box_text1">
+                    <p>Book Your Trip</p>
+                </div>
+                <div class="S1_box_text2">
+                    <p>Separated they live in Book marks grove right at the coast of the Sematics,a large language ocean. A small river named Duden flows by their place and supplies
+                    </p>
+                </div>
+            </div>
+            <div class="S1_box_below_tab_common">
+                <div>
+                    <img src="./nicesupport.png" alt="" class="S1_box_image">
+                </div>
+                <div class="S1_box_text1">
+                    <p>Nice Support</p>
+                </div>
+                <div class="S1_box_text2">
+                    <p>Separated they live in Book marks grove right at the coast of the Sematics,a large language ocean. A small river named Duden flows by their place and supplies
+                    </p>
+                </div>
+            </div>
+            <div id="S1_box_below_tab1"></div>
+        </div>
+
+
+    </section>
 
     <section class="s2_popular_des">
         <div>
@@ -200,13 +417,13 @@
 
     </section>
 
-    <div class="s2_blog">
+    <div class="s2_blog s_2_animateOnScroll">
         <h1 class="s2_popular_des_title">Recent Blog</h1>
         <p class="s2_popular_des_para">We love to tell our successful far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
     </div>
 
 
-    <section class="s2_blog_content">
+    <section class="s2_blog_content s_2_animateOnScroll">
         <div class="s2_left_img">
             <img src="https://i.ibb.co/02pdrdB/Screenshot-467.png" alt="">
         </div>
@@ -247,7 +464,7 @@
     </section>
 
 
-    <section class="s2_sale_container">
+    <section class="s2_sale_container s_2_animateOnScroll">
         <div class="s2_percent_block">
             <div class="s2_45poff">
                 <div class="s2_45">
@@ -281,13 +498,13 @@
     </section>
 
 
-    <div class="s2_recd_hotal">
+    <div class="s2_recd_hotal s_2_animateOnScroll">
         <h1 class="s2_recd_hotal_title">Recommended Hotels</h1>
         <p class="s2_recd_hotal_para">We love to tell our successful far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
     </div>
 
 
-    <section class="s2_hotal_slider">
+    <section class="s2_hotal_slider s_2_animateOnScroll">
 
         <div class="s2_leftright_btn">
             <div id="s2_rightbtn" onclick="s2_moveright()">
@@ -407,12 +624,13 @@
 
     </section>
 
-    <div class="s2_guest_head">
+    <div class="s2_guest_head s_2_animateOnScroll">
         <h1 class="s2_guest_title">Our Satisfied Guests says</h1>
         <p class="s2_guest_para">We love to tell our successful far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
     </div>
 
     <section class="s2_guest_block">
+
 
         <div id="s2_guestleft" onclick="s2_guestmoveright()">
             <button><img height="25vh" src="https://i.ibb.co/N1mN0WP/icons8-left-arrow-32-1.png" alt=""></button>
@@ -449,13 +667,13 @@
     </section>
 
 
-    <div class="s2_pop_countryblock">
+    <div class="s2_pop_countryblock s_2_animateOnScroll">
         <h1 class="s2_pop_countyh">Most Popular Travel Countries</h1>
         <p class="s2_pop_countryp">We love to tell our successful far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
     </div>
 
 
-    <section class="s2_country1_block">
+    <section class="s2_country1_block s_2_animateOnScroll">
 
         <div class="s2_left_country1">
             <div class="s2_country_img1">
@@ -533,7 +751,7 @@
     </section>
 
 
-    <section class="s2_country2_block">
+    <section class="s2_country2_block s_2_animateOnScroll">
 
 
         <div class="s2_right_country2">
@@ -612,7 +830,7 @@
 
     </section>
 
-    <section class="s2_signup_container">
+    <section class="s2_signup_container s_2_animateOnScroll">
         <h1 class="s2_signuphead">Sign Up for a Newsletter</h1>
         <h3 class="s2_signtext">Sign up for our mailing list to get lastest updates and offers.</h3>
         <div class="s2_signinbtn">
@@ -621,8 +839,15 @@
         </div>
     </section>
 
+
 </body>
 
 </html>
+<script src="home.js">
+    $('.S1_nav_menubar').click(function() {
+        $('this').toggleClass("click")
+    })
+</script>
 
-<script src="js.js"></script>
+<script>
+</script>

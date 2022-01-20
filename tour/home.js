@@ -1,21 +1,41 @@
-//------------------ readBtn Hover--------------------//
+let image = document.getElementById("image");
+// document.getElementById("image").style.background ( linear-gradient( rgba(0, 0, 0, 0.6) ,rgba(0, 0, 0, 0.3)))
+let arrOfImage = ["image10.webp", "image11.webp", "image12.webp", "image13.webp"]
+image.src = "image21.webp"
+let text1 = ["2 DAYS TOUR", "10 DAYS CRUISE", "EXPLORE OUR MOST TRAVEL AGENCY", "EXPERIENCE THE"]
+let text2 = ["Amazing Maldives Tour", "From Greece to Spain", "Our Travel Agency", "Best Trip Ever"]
 
-var s2_offerbtn = document.querySelector(".s2_offerread_btn")
-s2_offerbtn.addEventListener("mouseenter", yellow)
-s2_offerbtn.addEventListener("mouseleave", trans)
+setInterval(function() {
+    let random = Math.floor(Math.random() * 4)
+    let centerText1 = document.getElementById("S1_div_centertext1")
+    centerText1.textContent = text1[random]
+    let centerText2 = document.getElementById("S1_div_centertext2")
+    centerText2.textContent = text2[random]
+    image.src = arrOfImage[random]
+        // image.style.filter = "brightness(0.5)";
+        // image.style.filter = "opacity(0.2)";
+}, 2000)
 
-function yellow() {
-    s2_offerbtn.style.background = "rgb(255,221,0)"
+
+var tabButtons = document.querySelectorAll(".S1_tab .S1_button_container button");
+var S1_tab_pannels = document.querySelectorAll(".S1_tab  .S1_tab_pannel");
+
+function showPanel(panelIndex, colorCode) {
+    tabButtons.forEach(function(node) {
+        node.style.backgroundColor = "";
+        node.style.color = "";
+    });
+    tabButtons[panelIndex].style.backgroundColor = colorCode;
+    tabButtons[panelIndex].style.color = "white";
+    S1_tab_pannels.forEach(function(node) {
+        node.style.display = "none";
+    });
+    S1_tab_pannels[panelIndex].style.display = "block";
+    S1_tab_pannels[panelIndex].style.backgroundColor = colorCode;
 }
+showPanel(0, '#2c2e3e');
 
-function trans() {
-    s2_offerbtn.style.background = "transparent"
-}
-
-//------------------ readBtn Hover--------------------//
-
-
-
+// section 2 start/ /
 
 
 //--------------------- hotal slider //----------------
@@ -131,4 +151,32 @@ function s2_guestmoveright() {
 
 
 
-//--------------------- guest slider //----------------
+// --------------------- guest slider //----------------
+
+
+
+//--------------------- animate on scroll //----------------
+
+window.addEventListener("scroll", animate);
+
+function animate() {
+    var compo = document.querySelectorAll(".s_2_animateOnScroll")
+
+    for (var i = 0; i < compo.length; i++) {
+        var windowHeight = window.innerHeight;
+        var top = compo[i].getBoundingClientRect().top;
+
+        if (top < windowHeight) {
+            compo[i].classList.add("active");
+        } else {
+            compo[i].classList.remove("active");
+        }
+    }
+
+}
+
+
+//--------------------- animate on scroll  //----------------
+
+
+// section 2 end //
