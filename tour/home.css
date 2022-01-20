@@ -115,7 +115,7 @@ width: 0px;
 /* .S1_nav_right{
     display: none;
 } */
-@media only screen and (max-width: 770px){
+@media only screen and (max-width: 760px){
     #S1_nav{
         overflow: hidden;
         /* background-color: black; */
