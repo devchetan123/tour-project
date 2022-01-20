@@ -14,13 +14,13 @@
         height: 680px;
         overflow: hidden;
     }
-    /* img {
+    .S1_home_image{
         margin-left: -4%;
         margin-top: -15%;
         width: 107%;
         height: 185%;
         background: linear-gradient(black, 0.6, black, 0.6);
-    } */
+    }
     
     #S1_div_centertext {
         position: absolute;
