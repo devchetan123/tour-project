@@ -1422,17 +1422,6 @@ footer :nth-child(2) :nth-child(2){
         /* below */
     }
     
-    /* @media screen and (max-width:920px) {
-        .s2_popular_des {
-            margin-top: 200%;
-        }
-    } */
-    
-    /* @media screen and (max-width:870px) {
-        .s2_popular_des {
-            margin-top: 210%;
-        }
-    } */
     
     @media only screen and (max-width: 780px) {
         #S1_nav {
