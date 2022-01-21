@@ -9,6 +9,8 @@
     width: 100%;
 } */
 
+
+
 /* amazing box start*/
 
 .s2_afternav_block {
@@ -113,6 +115,34 @@ footer :nth-child(1) > h4{
 footer :nth-child(1) > h2{
     margin-left: 10%;
 }
+
+/* bottm to top btn */
+
+#s2_topBtn img{
+    height: 3vh;
+}
+
+#s2_topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    /* font-size: 18px; */
+    border: none;
+    outline: none;
+    background-color: rgb(255,221,0);
+    color: white;
+    cursor: pointer;
+    padding: 13px;
+    border-radius: 4px;
+  }
+  
+  #s2_topBtn:hover {
+    background-color: #555;
+  }
+
+/* bottm to top btn */
 
 
 .s2_socialicon{
