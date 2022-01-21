@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
+    <link rel="stylesheet" href="service.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script type="text/javascript">
+        function togglemenu(){
+            document.querySelector('.Service_nav_right').classList.toggle('active')
+        }
+    </script>
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
 
     <style>
@@ -13,7 +21,114 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
 }
+
+
+/* header */
+
+.Service_div_image{
+    width: 100%;
+    height: 680px;
+    overflow: hidden;
+    
+}
+
+#Service_nav_image{
+    margin-left: -4%;
+    margin-top: -15%;
+    width: 107%;
+    height: 185%;
+    background-image : linear-gradient(black,0.6 , black,0.6); 
+    
+    
+}
+#Service_div_centertext{
+    position: absolute;
+    /* border: 2px solid black; */
+    /* background: black; */
+    width: 100%;
+    height: 24vh;
+    margin-top: 200px;
+    overflow: hidden;
+    
+    
+
+}
+#Service_div_centertext1{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 41px;
+    text-shadow: 2px 2px black;
+    
+}
+#Service_div_centertext2{
+    color: white;
+    font-size: 53px;
+    text-align: center;
+    margin-top: 22px;
+    margin-top: 10px;
+    text-shadow: 2px 2px black;
+}
+
+.Service_nav_menubar{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 91%;
+    z-index: 1;
+    height: 0px;
+    width: 0px;
+}
+
+#Service_nav{
+    color: white;
+    position: absolute;
+    margin-left: 1%;
+    margin-top: 35px;
+    width: 98%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.Service_nav_left{
+    font-size: 24px;
+    height: fit-content;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.Service_nav_right_ul{
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.Service_nav_right_ul>li{
+    padding-left: 5%;
+}
+.Service_nav_right_ul>li>a{
+    color: white;
+}
+
+.Service_nav_right_ul>li>a:hover{
+    color: rgba(255,221,0,255);
+}
+.Service_nav_right_ul>li>a:active{
+    color: rgba(255,221,0,255); 
+} 
+
+/* header */
+
 
 .s2_afternav_block {
     display: flex;
@@ -315,6 +430,89 @@ footer :nth-child(2) :nth-child(2){
     cursor: pointer;
 }
 
+.s_2_animateOnScroll {
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: all 1s ease;
+    }
+    
+    .s_2_animateOnScroll.active {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+
+    @media only screen and (max-width: 770px){
+    #Service_nav{
+        overflow: hidden;
+        /* background-color: black; */
+        height: 63%;
+        margin-top: 0;
+    }
+    .Service_nav_menubar{
+        position: absolute;
+        margin-top: 19%;
+    margin-left: -13%;
+    z-index: 1;
+    height: 30px;
+    width: 35px;
+    }
+    .Service_nav_menubar:hover{
+        position: absolute;
+        z-index: 1;
+        height: 34px;
+        width: 40px;
+        transition: left 0.4 ease;
+     }
+
+     .Service_nav_right.active{
+         right: 0;
+     }
+
+
+    
+    .Service_nav_right{
+        position: absolute;
+        margin-top: 85vh;
+        height: 147vh;
+        width: 267px;
+       background-color: black; 
+        right: -267px;
+        z-index: 1;
+    }
+    .Service_nav_right_ul{
+        font-size: 13px;
+        display: block;
+        list-style-type: none;
+    }
+    
+     .Service_nav_right_ul>li{
+        margin-top: 7%;
+    }
+    .Service_nav_right_ul>li>a{
+        color: white;
+    }
+    
+    .Service_nav_right_ul>li>a:hover{
+        color: rgba(255,221,0,255);
+    }
+    .Service_nav_right_ul>li>a:active{
+        color: rgba(255,221,0,255); 
+    } 
+    .Service_nav_left {
+        font-size: 24px;
+    height: fit-content;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: -48vh;
+    margin-left: 4%;
+    }
+
+
+}
+
+
 
 @media screen and (max-width:760px) {
     .s2_afternav_block {
@@ -338,13 +536,13 @@ footer :nth-child(2) :nth-child(2){
     }
     .s2_amazimg {
         background-color: rgb(247, 247, 247);
-        height: 32vh;
+        height: 130px;
         width: 18%;
         border-radius: 50%;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 12%;
+        margin-top: 15%;
     }
     .s2_amazimg>img {
         height: 50%;
@@ -549,7 +747,58 @@ footer :nth-child(2) :nth-child(2){
 <body>
     
 
-    <section class="s2_afternav_block">
+    <section id="Service">
+        <!-- NAVIGATION BAR START -->
+        <nav id="Service_nav">
+
+            <div class="Service_nav_left" >TOUR</div>
+            <div class="Service_nav_right" onclick="togglemenu()">
+                <img src="menubar.png" alt="" class="Service_nav_menubar" >
+                <ul class="Service_nav_right_ul">
+                    <li>
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="tour.html">Tours</a>
+                    </li>
+                    <li>
+                        <a href="hotel.html">Hotels</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+        
+        <div class="Service_div_image">
+            <div id="Service_div_centertext">
+                <p id="Service_div_centertext1">BY COLORLIB.COM</p>
+                <p id="Service_div_centertext2">Our Services</p>
+            </div>
+            <img src="serviceimg.webp" id="Service_nav_image">
+        </div>
+        
+        
+        <!-- NAVIGATION BAR END -->
+
+    </section>
+
+
+
+
+    <section class="s2_afternav_block s_2_animateOnScroll">
         <div class="s2_main_afternav_blue">
             <div class="s2_amazimg">
                 <img src="https://i.ibb.co/d5tBs9K/around.png" alt="">
@@ -604,7 +853,7 @@ footer :nth-child(2) :nth-child(2){
         <p class="s2_guest_para">We love to tell our successful far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
     </div>
 
-    <section class="s2_guest_block">
+    <section class="s2_guest_block ">
 
 
         <div id="s2_guestleft" onclick="s2_guestmoveright()">
@@ -641,7 +890,7 @@ footer :nth-child(2) :nth-child(2){
 
     </section>
 
-    <section class="s2_signup_container">
+    <section class="s2_signup_container s_2_animateOnScroll">
         <h1 class="s2_signuphead">Sign Up for a Newslettter</h1>
         <h3 class="s2_signtext">Sign up for our mailing list to get lastest updates and offers.</h3>
         <div class="s2_signinbtn">
@@ -754,6 +1003,28 @@ function s2_guestmoveright() {
     }
 }
 
+
+// animation code //
+
+window.addEventListener("scroll", animate);
+
+function animate() {
+    var compo = document.querySelectorAll(".s_2_animateOnScroll")
+
+    for (var i = 0; i < compo.length; i++) {
+        var windowHeight = window.innerHeight;
+        var top = compo[i].getBoundingClientRect().top;
+
+        if (top < windowHeight) {
+            compo[i].classList.add("active");
+        } else {
+            compo[i].classList.remove("active");
+        }
+    }
+
+}
+
+// animation code // 
 </script>
 
 </html>
