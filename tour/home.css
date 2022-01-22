@@ -1070,49 +1070,49 @@ footer :nth-child(2) :nth-child(2){
     
     .s2_country_img1 {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://i.ibb.co/LdRMdCg/Screenshot-458.png");
-        height: 36vh;
+        height: 38vh;
         background-size: cover;
     }
     
     .s2_country_img2 {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://i.ibb.co/56xMDPJ/Screenshot-459.png");
-        height: 36vh;
+        height: 38vh;
         background-size: cover;
     }
     
     .s2_country_img3 {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://i.ibb.co/Nm6MN0f/Screenshot-460.png");
-        height: 36vh;
+        height: 38vh;
         background-size: cover;
     }
     
     .s2_country_img4 {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://i.ibb.co/nLdLkpn/Screenshot-462.png");
-        height: 36vh;
+        height: 38vh;
         background-size: cover;
     }
     
     .s2_country2_img1 {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://i.ibb.co/0DXyjXh/Screenshot-463.png");
-        height: 36vh;
+        height: 38vh;
         background-size: cover;
     }
     
     .s2_country2_img2 {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(" https://i.ibb.co/jvtWV19/Screenshot-464.png");
-        height: 36vh;
+        height: 38vh;
         background-size: cover;
     }
     
     .s2_country2_img3 {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://i.ibb.co/jgRS31p/Screenshot-465.png ");
-        height: 36vh;
+        height: 38vh;
         background-size: cover;
     }
     
     .s2_country2_img4 {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://i.ibb.co/sWXP4GC/Screenshot-466.png");
-        height: 36vh;
+        height: 38vh;
         background-size: cover;
     }
     
@@ -1177,9 +1177,9 @@ footer :nth-child(2) :nth-child(2){
     .s2_country_img4 {
         color: white;
         /* font-weight: 700; */
-        font-size: 15px;
+        font-size: 17px;
         position: relative;
-        padding-top: 53%;
+        padding-top: 51%;
         padding-left: 6%;
     }
     
@@ -1189,9 +1189,9 @@ footer :nth-child(2) :nth-child(2){
     .s2_country2_img4 {
         color: white;
         /* font-weight: 700; */
-        font-size: 15px;
+        font-size: 17px;
         position: relative;
-        padding-top: 53%;
+        padding-top: 51%;
         padding-left: 6%;
     }
     
@@ -1270,6 +1270,8 @@ footer :nth-child(2) :nth-child(2){
     }
     /* scroll animation */
     /* section 2 ends */
+
+
     
     @media only screen and (max-width: 1000px) {
 
