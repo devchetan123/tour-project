@@ -1,6 +1,6 @@
 <h1>Tour Clone</h1>
 
-<p>This repository is for developing the Travelix clone.</p>
+<p>This repository is for developing the Tour clone.</p>
 
 <h2>What is Tour?</h2>
 
