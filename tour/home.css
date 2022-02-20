@@ -604,6 +604,8 @@ footer :nth-child(2) :nth-child(2){
         position: absolute;
         width: 100%;
         height: 100%;
+        -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
     }
     
     .s2_flip-box-front {
